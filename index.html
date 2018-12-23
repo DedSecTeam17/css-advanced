@@ -5,9 +5,113 @@
     <title>Title</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
+<style>
+    /*<!--rapper class all div inside -->*/
+
+    .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(200px, auto);
+
+    }
+
+    .nested > div {
+        color: greenyellow;
+        padding: 2em;
+
+    }
+
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-column-gap: 1em;
+    }
+
+
+    .wrapper > div {
+
+        background: #eee;
+        padding: 1em;
+    }
+
+    .wrapper > div:nth-child(even) {
+        background: whitesmoke;
+    }
+
+    ul {
+        display: block;
+        background-color: oldlace;
+        list-style: none;
+    }
+
+
+</style>
 <body>
 
-<p>Hi there </p>
+<div class="wrapper">
+
+    <div>
+        <ul>
+            <li>Admin DashBoard</li>
+            <li>Posts</li>
+            <li>Tags</li>
+            <li>Categories</li>
+        </ul>
+    </div>
+
+
+    <div class="nested">
+
+        <div style="background-color: oldlace">
+            asdasd asdasd
+
+        </div>
+
+        <div style="background-color: blanchedalmond">
+            asdasda asdasd asdasd
+        </div>
+
+        <div style="background-color: darkgray">
+            asdasd asdasd
+        </div>
+
+
+
+        <div style="background-color: oldlace">
+            asdasd asdasd
+
+        </div>
+
+        <div style="background-color: blanchedalmond">
+            asdasda asdasd asdasd
+        </div>
+
+        <div style="background-color: darkgray">
+            asdasd asdasd
+        </div>
+
+
+        <div style="background-color: oldlace">
+            asdasd asdasd
+
+        </div>
+
+        <div style="background-color: blanchedalmond">
+            asdasda asdasd asdasd
+        </div>
+
+        <div style="background-color: darkgray">
+            asdasd asdasd
+        </div>
+
+
+    </div>
+
+
+</div>
 
 </body>
 </html>
